@@ -1,0 +1,82 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  text-align: center;
+
+  bottom: 0;
+  width: 100%;
+
+  background-color: v.$grey;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+
+  .footer-content-top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+
+    .subheadings {
+      display: flex;
+      gap: v.$gap-footer;
+      a {
+        font-size: 1rem;
+        text-decoration: none;
+
+        color: v.$font-black;
+      }
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-content-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: v.$gap-footer;
+
+    margin-bottom: 10px;
+
+    .payment-icons span {
+      transform: scale(0.8);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+
+      i {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 0.7em;
+    }
+  }
+}

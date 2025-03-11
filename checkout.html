@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/scss/product-page.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="product-page.html" />
+    <title>Kassa</title>
+  </head>
+  <body>
+    <section id="header-place"></section>
+    <section class="checkout-top">
+      <h1>Kassa</h1>
+      <!-- // linje// -->
+      <hr class="thin-line" />
+      <section class="product-details">
+        <section id="cart-container">
+          <article id="cartContainer" class="cart-container">
+            <article class="cart-header">
+              <h1>Din varukorg</h1>
+            </article>
+            <div id="cartItem" class="cart-item"></div>
+            <div class="cart-summary">
+              <p class="total" id="totalPrice">Total summa: 0 kr</p>
+            </div>
+          </article>
+        </section>
+        <article class="promo-input-field">
+          <input
+            type="text"
+            placeholder="Rabattkod eller presentkort"
+            class="input-box"
+          />
+          <button class="promo-code-btn">Tillämpa</button>
+        </article>
+      </section>
+      <h2>Leveransinformation</h2>
+      <section class="delivery-details">
+        <article class="input-delivery-section">
+          <h3>E-postadress</h3>
+          <input
+            type="text"
+            placeholder="Ange din e-postadress"
+            class="input-box"
+          />
+        </article>
+        <article class="input-delivery-section">
+          <h3>Postnummer</h3>
+          <input
+            type="text"
+            placeholder="Ange ditt postnummer (5 siffror)"
+            class="input-box"
+          />
+        </article>
+      </section>
+      <a href="#shipping" class="continue-toggle-section">
+        <button class="continue-toggle-section">FORTSÄTT</button>
+      </a>
+      <h2 id="shipping">Fraktmetod</h2>
+      <section class="shipping-details">
+        <article class="shipping-option">
+          <article class="label-info">
+            <label class="shipping-label">
+              <input type="radio" name="shipping" class="shipping-checkbox" />
+            </label>
+            <article class="shipping-info">
+              <h3 class="shipping-title">Instabox</h3>
+              <p class="shipping-description">3-5 vardagar</p>
+            </article>
+          </article>
+          <section class="shipping-content">
+            <img
+              src="https://play-lh.googleusercontent.com/tedohXVYN-qaEsgbpU-4Uyaqn9SxY9ks3zojU31VLCQlWFwCs0h14SH0AwzwuD8hoQ7G"
+              alt="Instabox symbol"
+              class="shipping-icon"
+            />
+            <p class="shipping-price">49 kr</p>
+          </section>
+        </article>
+        <article class="shipping-option">
+          <article class="label-info">
+            <label class="shipping-label">
+              <input type="radio" name="shipping" class="shipping-checkbox" />
+            </label>
+            <article class="shipping-info">
+              <h3 class="shipping-title">Postnord</h3>
+              <p class="shipping-description">5-7 vardagar</p>
+            </article>
+          </article>
+          <article class="shipping-content">
+            <img
+              src="https://play-lh.googleusercontent.com/yFNV5AKIbUPc1j9eaFnNhGM09iJiPUWtsdxavUg85ofHfIoluX0okW0VCpWbHtLLAhA"
+              alt="Portnord symbol"
+              class="shipping-icon"
+            />
+            <p class="shipping-price">49 kr</p>
+          </article>
+        </article>
+      </section>
+    </section>
+    <section class="user-input">
+      <h2>Leverans och betalning</h2>
+      <form
+        class="form"
+        id="checkoutForm"
+        action="/comfirmation.html"
+        method="post"
+      >
+        <h3>Dina uppgifter</h3>
+        <label for="email" class="hidden-label">E-postadress</label>
+        <input
+          type="email"
+          id="userEmail"
+          name="email"
+          placeholder="E-postadress"
+        />
+
+        <label for="postcode" class="hidden-label">Postnummer</label>
+        <input
+          type="text"
+          id="userPostcode"
+          name="postcode"
+          placeholder="Postnummer"
+          required
+        />
+
+        <div class="name-field">
+          <div>
+            <label for="firstname" class="hidden-label">Förnamn</label>
+            <input
+              type="text"
+              id="userFirstName"
+              name="firstname"
+              placeholder="Förnamn"
+              required
+            />
+          </div>
+          <div>
+            <label for="lastname" class="hidden-label">Efternamn</label>
+            <input
+              type="text"
+              id="userLastName"
+              name="lastname"
+              placeholder="Efternamn"
+              required
+            />
+          </div>
+        </div>
+        <label for="address" class="hidden-label">Adress</label>
+        <input
+          type="text"
+          id="userAddress"
+          placeholder="Adress"
+          name="adress"
+          required
+        />
+        <label for="city" class="hidden-label">Ort</label>
+        <input
+          type="text"
+          id="userCity"
+          placeholder="Ort"
+          name="city"
+          required
+        />
+        <label for="phone" class="hidden-label">Mobilnummer</label>
+        <input
+          type="tel"
+          id="userPhoneNr"
+          name="phone"
+          placeholder="Mobilnummer"
+          required
+        />
+      </form>
+    </section>
+    <section class="payment">
+      <h2>Betalning</h2>
+
+      <div class="payment-option">
+        <input type="radio" id="klarna" value="klarna" name="payment" />
+        <label for="klarna">
+          <span class="payment-title">Betala med Klarna</span>
+          <span class="payment-description">Säkert och smidigt</span>
+        </label>
+        <img
+          src="src/assets/img/klarna-logo.png"
+          alt="Klarna-logotyp"
+          class="payment-logo"
+        />
+      </div>
+      <div class="payment-option">
+        <input type="radio" id="card" name="payment" value="card" />
+        <label for="card">
+          <span class="payment-title">Betala med kort</span>
+          <span class="payment-description">Fyll i dina kortuppgifter</span>
+        </label>
+        <img
+          src="src/assets/img/card-icon.png"
+          alt="Kortikon"
+          class="payment-logo"
+        />
+      </div>
+    </section>
+    <section class="total-section">
+      <section class="total-price">
+        <h3>Att betala: <span id="cart-total-to-pay"></span></h3>
+      </section>
+      <a href="confirmation.html">
+        <button type="submit" class="pay-button" id="pay-button">
+          BETALA KÖP
+        </button>
+      </a>
+    </section>
+    <section id="footer-place"></section>
+    <script type="module" src="/src/ts/main.ts"></script>
+  </body>
+</html>

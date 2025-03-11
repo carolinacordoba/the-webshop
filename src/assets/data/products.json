@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "Doftljus - Koriander",
+      "price": 299,
+      "description": "Ett härligt doftljus med en mjuk korianderdoft.",
+      "image": "../src/assets/img/amour.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Doftljus - Citrus",
+      "price": 199,
+      "description": "Avkopplande doftljus med doft av citrus.",
+      "image": "../src/assets/img/citrus-sage.webp"
+    },
+    {
+      "id": 3,
+      "name": "Doftljus - Hippie",
+      "price": 249,
+      "description": "Friskt doftljus med fräsch arom.",
+      "image": "../src/assets/img/hippie.png"
+    },
+    {
+        "id": 4,
+        "name": "Doftljus - Orange",
+        "price": 149,
+        "description": "Mjuk orangedoft med avkopplande arom.",
+        "image": "../src/assets/img/orange-blossom.webp"
+      }
+  ]
+  

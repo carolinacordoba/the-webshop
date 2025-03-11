@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+// @use "footer";
+$grey-text: #929292;
+$primary-color: #eec8b3;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+.product-header {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.product-title {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.product-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .product-image {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .product-info {
+    margin: 20px;
+  }
+
+  .product-scent {
+    color: $grey-text;
+    margin: 10px 0 40px 0;
+  }
+
+  .product-price {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .product-description {
+    margin: 10px 0 20px 0;
+    font-size: 0.8rem;
+  }
+
+  .product-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+
+    .quantity-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .quantity-container label {
+      font-size: 16px;
+    }
+
+    .quantity-container input[type="number"] {
+      width: 50px;
+      height: 48px;
+      padding: 5px 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #add-to-cart {
+      flex: 1;
+      background-color: $primary-color;
+      color: black;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  .product-divider {
+    margin: 10px 0 20px 0;
+  }
+
+  ul {
+    padding-left: 12px;
+    li {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+// .related-products-header {
+//   margin-left: 20px;
+// }
+
+// // RELATERADE PRODUKTER - EJ KLAR
+// .related-products {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 1rem;
+//   padding: 10px;
+//   text-align: left;
+//   margin: 0 auto;
+//   cursor: pointer;
+
+//   .product-image {
+//     width: 100%;
+//     max-height: 500px;
+//     margin-bottom: 30px;
+//   }
+
+//   .related-product-card {
+//     background-color: #fff;
+//     border: 1px solid #ddd;
+//     border-radius: 8px;
+//     padding: 10px;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+//     margin: 10px 0 10px 0;
+//     flex: 1 1 calc(50% - 0.5rem);
+//   }
+// }
+
+/* Media Query för större skärmar */
+@media (min-width: 768px) {
+  .product-container {
+    margin: 40px auto;
+    max-width: 1200px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .product-header {
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+
+    .product-scent {
+      font-size: 1rem;
+    }
+
+    .product-image {
+      width: calc(50vw - 20px);
+      max-width: 600px;
+      height: auto;
+    }
+
+    .product-info {
+      flex: 1;
+      margin: 0 20px;
+      text-align: left;
+    }
+  }
+}

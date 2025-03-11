@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:focus,
+  &:active {
+    color: inherit;
+    outline: none;
+  }
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+.products-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 6rem;
+
+  h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+}
+
+// Senaste produkter
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  padding-inline: 10vw;
+
+  .product {
+    align-items: center;
+    overflow: hidden;
+
+    .product-image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background-color: transparent;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .product-info {
+      padding: 1rem;
+      text-align: center;
+      margin-top: 10px;
+
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .price {
+        font-weight: bold;
+        color: #333;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+// Om Oss
+
+.about-us {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin-top: 2rem;
+
+  h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #667;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  p:first-of-type {
+    font-style: italic;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+}
+
+// Media Queries Tablets/Laptop
+@media (min-width: 759px) {
+  // Senaste Produkter
+
+  .products-section {
+    padding-bottom: 3rem;
+
+    h2 {
+      font-size: 2.9rem;
+    }
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+    padding-inline: 5vw;
+
+    .product {
+      padding-inline: 15px;
+      padding-bottom: 1.7rem;
+
+      .product-info {
+        padding: 1rem;
+        text-align: center;
+        margin-top: 10px;
+
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  // Om Oss
+
+  .about-us {
+    padding: 6rem 2rem;
+    padding-top: 7rem;
+    padding-inline: 10vw;
+
+    h2 {
+      font-size: 2.3rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  // Senaste Produkter
+
+  .products-section {
+    padding-bottom: 3rem;
+
+    h2 {
+      font-size: 2.9rem;
+    }
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .product {
+      padding-inline: 15px;
+
+      .product-info {
+        padding: 1rem;
+        text-align: center;
+        margin-top: 10px;
+
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  // Om Oss
+
+  .about-us {
+    padding-inline: 15vw;
+  }
+}

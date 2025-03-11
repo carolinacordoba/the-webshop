@@ -1,0 +1,107 @@
+@use "../base/variables" as v;
+
+.user-input,
+.payment,
+.total-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid v.$secondary-grey;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: v.$font-grey;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.name-field {
+  display: flex;
+  gap: 16px;
+}
+
+.name-field div {
+  flex: 1;
+}
+
+.hidden-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid v.$secondary-grey;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.payment-option label {
+  flex: 1;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.payment-option input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.payment-title {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.payment-description {
+  display: block;
+  font-size: 0.9rem;
+  color: v.$font-grey;
+}
+
+.payment-logo {
+  height: 32px;
+}
+
+.total-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .pay-button {
+    margin: 20px 0 40px 0;
+    width: 100%;
+    padding: 16px;
+    background-color: v.$primary-color;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block;
+
+    &:hover {
+      background-color: #f5d6cc;
+    }
+  }
+}

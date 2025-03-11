@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Din Varukorg</title>
+    <script
+      src="https://kit.fontawesome.com/21a5d3b402.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header-place"></div>
+
+    <section id="section-cart" class="section-container">
+      <div id="cartContainer" class="cart-container">
+        <div class="cart-header">
+          <h1>Din varukorg</h1>
+        </div>
+        <div id="cartItem" class="cart-item"></div>
+
+        <div class="cart-summary">
+          <p class="total" id="totalPrice">Total summa: 0 kr</p>
+        </div>
+        <div class="cart-actions">
+          <button id="checkout" class="checkout">TILL KASSAN</button>
+          <button id="continueShopping" class="continue-shopping">
+            Fortsätt handla
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-place"></div>
+
+    <script type="module" src="/src/ts/main.ts"></script>
+  </body>
+</html>

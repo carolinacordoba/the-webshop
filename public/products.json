@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Candela 1",
+        "scent": "Koriander",
+        "description": "Lorem ipsum",
+        "imgUrl": "./src/assets/img/d82f42e67fae9470fe3d6a6d2c41124f.png",
+        "price": 299
+    },
+    {
+        "id": 2,
+        "name": "Candela 2",
+        "scent": "Soy",
+        "description": "Lorem ipsum",
+        "imgUrl": "./src/assets/img/c471e4d3c376881995ba4c6d8fe28e95.jpg",
+        "price": 299
+    },
+    {
+        "id": 3,
+        "name": "Candela 3",
+        "scent": "Citrus",
+        "description": "Lorem ipsum",
+        "imgUrl": "./src/assets/img/minimalist-candle-label-canva-template-dusk-313138.webp",
+        "price": 399
+    },
+    {
+        "id": 4,
+        "name": "Candela 4",
+        "scent": "Orange",
+        "description": "Lorem ipsum",
+        "imgUrl": "./src/assets/img/orange-blossom-scented-candle-made-with-natural-coconut-wax-101249.webp",
+        "price": 349
+    },
+    {
+        "id": 5,
+        "name": "Candela 5",
+        "scent": "Overose",
+        "description": "Lorem ipsum",
+        "imgUrl": "./src/assets/img/photo-1608977230965-6a1b92233ac6.avif",
+        "price": 299
+    }
+]
