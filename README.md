@@ -1,49 +1,65 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/XiHEpAmJ)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=17579684&assignment_repo_type=AssignmentRepo)
-# The Webshop - En inlämningsuppgift
+# The Webshop – Candelas
 
-Denna uppgift går ut på att ni skall bygga en webbshop baserat på kraven här under.
+<img width="1460" alt="Skärmavbild 2025-05-20 kl  18 14 13" src="https://github.com/user-attachments/assets/35d3993a-75b8-4b50-8d3c-1388d7daf2b4" />
 
-Detta projekt är ett vite-projekt där ni har en färdig struktur att arbeta vidare med.
+## 📝 Beskrivning
 
-## Teknik
+En gruppuppgift där vi utvecklat en webbshop med fokus på användarvänlighet och agila arbetssätt. Projektet är byggt med Vite och använder HTML, SCSS och TypeScript. Webbshoppen innehåller en landningssida, produktsida, varukorg och kassasida. Användaren kan lägga till, ta bort och uppdatera produkter i varukorgen, beräkna totalpris och simulera köp.
 
-- HTML
+## 🎯 Mål
+
+- Bygga en fullt fungerande webbshop med flera sidor:
+  - Landningssida (startsida)
+  - Produktsida (produktdetaljer)
+  - Varukorg
+  - Kassasida
+- Hantera varukorg:
+  - Lägga till produkter
+  - Öka/minska antal produkter i varukorg och på kassasida
+  - Ta bort produkter
+  - Beräkna totalpris korrekt
+- Simulera köp på kassasidan
+
+## 🧱 Tekniker
+
+- HTML5
 - SCSS
 - TypeScript
+- Vite 
 
-## Krav - Betyg G
+## ▶️ Så kör du projektet
 
-- En landningssida (startsida)
-- En produktsida (Produktdetaljer)
-- En kassasida
-- En varukorg
-- Kunna lägga produkter i varukorgen
-- Simulera att ett köp genomförs på kassasidan
-- Beräkna fram ett totalpris på produkterna i varukorgen
-- Att informationen i varukorgen lagras genom utökade objekt, inte bara en produkt
-- Att kunna öka/minska antalet produkter i varukorgen.
-- Att kunna öka/minska antalet produkter på kassasidan
-- Koden skall vara mycket väl strukturerad, väl formaterad samt innehålla god namngivning
+1. Klona eller ladda ner repot
+2. Öppna terminalen i projektmappen
+3. Kör `npm install` för att installera alla beroenden
+4. Kör `npm run dev` för att starta utvecklingsservern
+5. Öppna webbläsaren på den adress som visas i terminalen
 
-  **Agila arbetssätt:**
-- använda agil metod
-- genomföra agila aktiviteter
-- tillämpa verktyg som underlättar ett agilt arbetssätt
+---
 
+### Produktsida
 
-## Arbetssätt
+<img width="1318" alt="produktsida" src="https://github.com/user-attachments/assets/1f510385-8ba5-4d78-adcc-80a17b9f90dd" />
 
-Ni behöver driva detta projekt som ett agilt utvecklingsprojekt. Använd cermonier & artefakter ni har lärt er såsom:
+---
 
-- Daily standups
-- Sprintplanering
-- Backlog
-- Retrospektiv
+### Varukorg
 
-Ni bör ha mer en än iteration, välj om ni vill ha sprintar eller köra Kanban
+<img width="702" alt="varukorg" src="https://github.com/user-attachments/assets/5edd8177-f6b5-43a1-8d63-4e4584866d51" />
 
-## Styling
+---
 
-Försök att arbeta med så mycket styling ni hinner. Det är en rolig uppgift att ha med i ett portfolio framöver. Se till att era animationer är subtila. Arbeta med hero-images, kanske med lite video/ljud. Och skapa en bra struktur mer er scss redan från början. 
+### Kassasida
 
+<img width="989" alt="kassa" src="https://github.com/user-attachments/assets/89563bf7-61ad-4a21-a920-ca28b96fc4e4" />
+
+---
+
+### Tack för ditt köp
+<img width="888" alt="tack för köp" src="https://github.com/user-attachments/assets/f48e4931-72b8-414e-9271-9fa55a1ce5ad" />
+
+---
+
+## 📄 Licens
+
+Detta är ett skolprojekt och ingen licens är applicerad.
